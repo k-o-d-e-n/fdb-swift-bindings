@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FoundationDB  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="FoundationDB  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">FoundationDB Docs</a> (90% documented)</p>
+        <p class="header-right"><a href="https://github.com/FoundationDB/fdb-swift-bindings"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">FoundationDB Reference</a>
+        <img id="carat" src="img/carat.png" />
+        FoundationDB  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/ClusterDatabaseConnection.html">ClusterDatabaseConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ClusterDatabaseConnection/FdbApiError.html">– FdbApiError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ClusterTransaction.html">ClusterTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/InMemoryDatabaseConnection.html">InMemoryDatabaseConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/InMemoryTransaction.html">InMemoryTransaction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/ConflictRangeType.html">ConflictRangeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/DatabaseOption.html">DatabaseOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/ErrorPredicate.html">ErrorPredicate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/MutationType.html">MutationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/NetworkOption.html">NetworkOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/StreamingMode.html">StreamingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/TransactionOption.html">TransactionOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/TupleDecodingError.html">TupleDecodingError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/Bool.html">Bool</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Bool/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Data/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/EventLoopFuture.html">EventLoopFuture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Float32.html">Float32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Float32/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Float64.html">Float64</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Float64/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Int/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Int16.html">Int16</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Int16/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Int32.html">Int32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Int32/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Int64.html">Int64</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Int64/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Int8.html">Int8</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Int8/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/NSNull.html">NSNull</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/NSNull/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/String/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UInt16.html">UInt16</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UInt16/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UInt32.html">UInt32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UInt32/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UInt64.html">UInt64</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UInt64/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UInt8.html">UInt8</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UInt8/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UUID.html">UUID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UUID/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:12FoundationDB1loiSbAA13DatabaseValueV_ADtF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:12FoundationDB1loiSbAA5TupleV_ADtF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:12FoundationDB2eeoiSbAA13DatabaseValueV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:12FoundationDB2eeoiSbAA14TupleResultSetV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:12FoundationDB2eeoiSbAA5TupleV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:12FoundationDB2eeoiSbAA9ResultSetV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:12FoundationDB16setFdbApiVersionys5Int32VF">setFdbApiVersion(_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/DatabaseConnection.html">DatabaseConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/DatabaseValueConvertible.html">DatabaseValueConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/Transaction.html">Transaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/TupleAdapter.html">TupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/TupleConvertible.html">TupleConvertible</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/DatabaseValue.html">DatabaseValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/KeySelector.html">KeySelector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ResultSet.html">ResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Tuple.html">Tuple</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Tuple/EntryType.html">– EntryType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Tuple/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/TupleResultSet.html">TupleResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/TupleResultSet/ParsingError.html">– ParsingError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p>This package provides a layer for using FoundationDB as a data store for a
+Swift application.</p>
+<h1 id='building' class='heading'>Building</h1>
+<h2 id='general' class='heading'>General</h2>
+
+<p>Before you can build this library, you must install the FoundationDB client
+libraries and the FoundationDB server from our
+<a href="https://www.foundationdb.org/download/">website</a>.</p>
+
+<p>You will also need to set up a local cluster. There should be an fdbserver
+process that was started automatically when you installed the server. If it&rsquo;s
+not running, you can run:</p>
+<pre class="highlight plaintext"><code>fdbserver -p auto:4689 -d /usr/local/foundationdb/data/4689 -L /usr/local/foundationdb/logs &amp;
+</code></pre>
+
+<p>Once it&rsquo;s running, you will need to configure the initial database:</p>
+<pre class="highlight plaintext"><code>fdbcli --exec "configure new single ssd"
+fdbcli --exec status
+</code></pre>
+
+<p>This currently builds with Swift 4.0.</p>
+<h2 id='mac-command-line' class='heading'>Mac Command Line</h2>
+
+<p>To build on the Mac, you must manually install the <a href="https://github.com/FoundationDB/fdb-swift-bindings/blob/master/Sources/CFoundationDB/include/CFoundationDB_mac.pc">pkg-config</a>
+file in <code>/usr/local/lib/pkgconfig/CFoundationDB.pc</code>.</p>
+
+<p>Then you can run <code>swift build</code> to build the library, and <code>swift test</code> to run the
+test suite.</p>
+<h2 id='xcode' class='heading'>Xcode</h2>
+
+<p>You can generate an Xcode project for this package by running
+<code>swift package generate-xcodeproj</code> from the
+command-line. You should then be able to build the library and run the test
+suite in Xcode.</p>
+<h2 id='linux' class='heading'>Linux</h2>
+
+<p>This repository provides a docker image for building the library in Linux. You
+can build and run the tests by running:</p>
+<pre class="highlight plaintext"><code>    docker run --rm -v $PWD:/var/code/fdb-swift fdb-swift-build
+</code></pre>
+
+<p>You can build that Dockerfile by running:</p>
+<pre class="highlight plaintext"><code>    docker build -t fdb-swift-build Resources/docker
+</code></pre>
+
+<p>When switching from building for Mac and building for Linux or vice-versa, run
+<code>swift build --clean</code>.</p>
+<h2 id='updating-versions' class='heading'>Updating Versions</h2>
+
+<p>This package must be kept synchronized with new versions of FoundationDB. To
+update the version for this package:</p>
+
+<ol>
+<li>Check out the master branch of the
+<a href="https://github.com/apple/fdbc-swift">C Wrapper</a> project,
+and update the versions in the following files:</li>
+</ol>
+<pre class="highlight plaintext"><code>-   CFoundationDB.h
+-   CFoundationDB_linux.pc
+-   CFoundationDB_mac.pc
+</code></pre>
+
+<ol>
+<li>Commit those changes and push them to the remote repo</li>
+<li>Tag the master branch with the new version (e.g. <code>5.0.5</code>) and push that tag
+to the remote repo.</li>
+<li>Update the <code>resources/docker/Dockerfile</code> file with the new FDB version</li>
+<li><p>Build the new docker image:</p>
+<pre class="highlight plaintext"><code>docker build resources/docker -t fdb-swift-build
+</code></pre></li>
+<li><p>Update the dependency on fdbc-swift in <code>Package.swift</code> in this repo to
+specify the new version.</p></li>
+<li><p>Commit those change and push them to the remote repo</p></li>
+<li><p>Tag the master branch with the new version (e.g. <code>5.0.5</code>) and push that tag
+to the remote repo.</p></li>
+</ol>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://foundationdb.org" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-22)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

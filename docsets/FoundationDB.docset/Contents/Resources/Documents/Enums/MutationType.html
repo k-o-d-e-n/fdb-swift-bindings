@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MutationType Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/MutationType" class="dashAnchor"></a>
+    <a title="MutationType Enumeration Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">FoundationDB Docs</a> (90% documented)</p>
+        <p class="header-right"><a href="https://github.com/FoundationDB/fdb-swift-bindings"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">FoundationDB Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        MutationType Enumeration Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ClusterDatabaseConnection.html">ClusterDatabaseConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ClusterDatabaseConnection/FdbApiError.html">– FdbApiError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ClusterTransaction.html">ClusterTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InMemoryDatabaseConnection.html">InMemoryDatabaseConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InMemoryTransaction.html">InMemoryTransaction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ConflictRangeType.html">ConflictRangeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DatabaseOption.html">DatabaseOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ErrorPredicate.html">ErrorPredicate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MutationType.html">MutationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NetworkOption.html">NetworkOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StreamingMode.html">StreamingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransactionOption.html">TransactionOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TupleDecodingError.html">TupleDecodingError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Bool.html">Bool</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Bool/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/EventLoopFuture.html">EventLoopFuture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float32.html">Float32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float32/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float64.html">Float64</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float64/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int16.html">Int16</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int16/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int32.html">Int32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int32/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int64.html">Int64</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int64/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int8.html">Int8</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int8/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSNull.html">NSNull</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSNull/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt16.html">UInt16</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt16/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt32.html">UInt32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt32/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt64.html">UInt64</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt64/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt8.html">UInt8</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt8/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UUID.html">UUID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UUID/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB1loiSbAA13DatabaseValueV_ADtF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB1loiSbAA5TupleV_ADtF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB2eeoiSbAA13DatabaseValueV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB2eeoiSbAA14TupleResultSetV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB2eeoiSbAA5TupleV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB2eeoiSbAA9ResultSetV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB16setFdbApiVersionys5Int32VF">setFdbApiVersion(_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DatabaseConnection.html">DatabaseConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DatabaseValueConvertible.html">DatabaseValueConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Transaction.html">Transaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TupleAdapter.html">TupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TupleConvertible.html">TupleConvertible</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DatabaseValue.html">DatabaseValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KeySelector.html">KeySelector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ResultSet.html">ResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tuple.html">Tuple</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tuple/EntryType.html">– EntryType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tuple/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TupleResultSet.html">TupleResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TupleResultSet/ParsingError.html">– ParsingError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>MutationType</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">MutationType</span> <span class="p">:</span> <span class="kt">UInt32</span></code></pre>
+
+                </div>
+              </div>
+            <p>A set of operations that can be performed atomically on a database.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB12MutationTypeO3addA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/add" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB12MutationTypeO3addA2CmF">add</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Performs an addition of little-endian integers. If the existing value in the database is not present or shorter than <code>param</code>, it is first extended to the length of <code>param</code> with zero bytes.  If <code>param</code> is shorter than the existing value in the database, the existing value is truncated to match the length of <code>param</code>. The integers to be added must be stored in a little-endian representation.  They can be signed in two&rsquo;s complement representation or unsigned. You can add to an integer at a known offset in the value by prepending the appropriate number of zero bytes to <code>param</code> and padding with zero bytes to match the length of the value. However, this offset technique requires that you know the addition will not cause the integer field within the value to overflow.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">add</span> <span class="o">=</span> <span class="mi">2</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB12MutationTypeO3andACSgvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/and" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB12MutationTypeO3andACSgvpZ">and</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">and</span><span class="p">:</span> <span class="kt">MutationType</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB12MutationTypeO6bitAndA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/bitAnd" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB12MutationTypeO6bitAndA2CmF">bitAnd</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Performs a bitwise <code><a href="../Enums/MutationType.html#/s:12FoundationDB12MutationTypeO3andACSgvpZ">and</a></code> operation.  If the existing value in the database is not present, then <code>param</code> is stored in the database. If the existing value in the database is shorter than <code>param</code>, it is first extended to the length of <code>param</code> with zero bytes.  If <code>param</code> is shorter than the existing value in the database, the existing value is truncated to match the length of <code>param</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">bitAnd</span> <span class="o">=</span> <span class="mi">6</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB12MutationTypeO2orACSgvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/or" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB12MutationTypeO2orACSgvpZ">or</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">or</span><span class="p">:</span> <span class="kt">MutationType</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB12MutationTypeO5bitOrA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/bitOr" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB12MutationTypeO5bitOrA2CmF">bitOr</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Performs a bitwise <code><a href="../Enums/MutationType.html#/s:12FoundationDB12MutationTypeO2orACSgvpZ">or</a></code> operation.  If the existing value in the database is not present or shorter than <code>param</code>, it is first extended to the length of <code>param</code> with zero bytes.  If <code>param</code> is shorter than the existing value in the database, the existing value is truncated to match the length of <code>param</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">bitOr</span> <span class="o">=</span> <span class="mi">7</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB12MutationTypeO3xorACSgvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/xor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB12MutationTypeO3xorACSgvpZ">xor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">xor</span><span class="p">:</span> <span class="kt">MutationType</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB12MutationTypeO6bitXorA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/bitXor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB12MutationTypeO6bitXorA2CmF">bitXor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Performs a bitwise <code><a href="../Enums/MutationType.html#/s:12FoundationDB12MutationTypeO3xorACSgvpZ">xor</a></code> operation.  If the existing value in the database is not present or shorter than <code>param</code>, it is first extended to the length of <code>param</code> with zero bytes.  If <code>param</code> is shorter than the existing value in the database, the existing value is truncated to match the length of <code>param</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">bitXor</span> <span class="o">=</span> <span class="mi">8</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB12MutationTypeO12appendIfFitsA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/appendIfFits" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB12MutationTypeO12appendIfFitsA2CmF">appendIfFits</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Appends <code>param</code> to the end of the existing value already in the database at the given key (or creates the key and sets the value to <code>param</code> if the key is empty). This will only append the value if the final concatenated value size is less than or equal to the maximum value size (i.e., if it fits). WARNING: No error is surfaced back to the user if the final value is too large because the mutation will not be applied until after the transaction has been committed. Therefore, it is only safe to use this mutation type if one can guarantee that one will keep the total value size under the maximum size.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">appendIfFits</span> <span class="o">=</span> <span class="mi">9</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB12MutationTypeO3maxA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/max" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB12MutationTypeO3maxA2CmF">max</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Performs a little-endian comparison of byte strings. If the existing value in the database is not present or shorter than <code>param</code>, it is first extended to the length of <code>param</code> with zero bytes.  If <code>param</code> is shorter than the existing value in the database, the existing value is truncated to match the length of <code>param</code>. The larger of the two values is then stored in the database.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">max</span> <span class="o">=</span> <span class="mi">12</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB12MutationTypeO3minA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/min" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB12MutationTypeO3minA2CmF">min</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Performs a little-endian comparison of byte strings. If the existing value in the database is not present, then <code>param</code> is stored in the database. If the existing value in the database is shorter than <code>param</code>, it is first extended to the length of <code>param</code> with zero bytes.  If <code>param</code> is shorter than the existing value in the database, the existing value is truncated to match the length of <code>param</code>. The smaller of the two values is then stored in the database.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">min</span> <span class="o">=</span> <span class="mi">13</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB12MutationTypeO20setVersionstampedKeyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/setVersionstampedKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB12MutationTypeO20setVersionstampedKeyA2CmF">setVersionstampedKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Transforms <code>key</code> using a versionstamp for the transaction. Sets the transformed key in the database to <code>param</code>. The key is transformed by removing the final four bytes from the key and reading those as a little-Endian 32-bit integer to get a position <code>pos</code>. The 10 bytes of the key from <code>pos</code> to <code>pos + 10</code> are replaced with the versionstamp of the transaction used. The first byte of the key is position 0. A versionstamp is a 10 byte, unique, monotonically (but not sequentially) increasing value for each committed transaction. The first 8 bytes are the committed version of the database (serialized in big-Endian order). The last 2 bytes are monotonic in the serialization order for transactions. WARNING: At this time, versionstamps are compatible with the Tuple layer only in the Java and Python bindings. Also, note that prior to API version 520, the offset was computed from only the final two bytes rather than the final four bytes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">setVersionstampedKey</span> <span class="o">=</span> <span class="mi">14</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB12MutationTypeO22setVersionstampedValueA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/setVersionstampedValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB12MutationTypeO22setVersionstampedValueA2CmF">setVersionstampedValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Transforms <code>param</code> using a versionstamp for the transaction. Sets the <code>key</code> given to the transformed <code>param</code>. The parameter is transformed by removing the final four bytes from <code>param</code> and reading those as a little-Endian 32-bit integer to get a position <code>pos</code>. The 10 bytes of the parameter from <code>pos</code> to <code>pos + 10</code> are replaced with the versionstamp of the transaction used. The first byte of the parameter is position 0. A versionstamp is a 10 byte, unique, monotonically (but not sequentially) increasing value for each committed transaction. The first 8 bytes are the committed version of the database (serialized in big-Endian order). The last 2 bytes are monotonic in the serialization order for transactions. WARNING: At this time, versionstamps are compatible with the Tuple layer only in the Java and Python bindings. Also, note that prior to API version 520, the versionstamp was always placed at the beginning of the parameter rather than computing an offset.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">setVersionstampedValue</span> <span class="o">=</span> <span class="mi">15</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB12MutationTypeO7byteMinA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/byteMin" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB12MutationTypeO7byteMinA2CmF">byteMin</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Performs lexicographic comparison of byte strings. If the existing value in the database is not present, then <code>param</code> is stored. Otherwise the smaller of the two values is then stored in the database.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">byteMin</span> <span class="o">=</span> <span class="mi">16</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB12MutationTypeO7byteMaxA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/byteMax" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB12MutationTypeO7byteMaxA2CmF">byteMax</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Performs lexicographic comparison of byte strings. If the existing value in the database is not present, then <code>param</code> is stored. Otherwise the larger of the two values is then stored in the database.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">byteMax</span> <span class="o">=</span> <span class="mi">17</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://foundationdb.org" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-22)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

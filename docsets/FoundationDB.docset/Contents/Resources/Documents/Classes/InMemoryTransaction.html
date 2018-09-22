@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>InMemoryTransaction Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/InMemoryTransaction" class="dashAnchor"></a>
+    <a title="InMemoryTransaction Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">FoundationDB Docs</a> (90% documented)</p>
+        <p class="header-right"><a href="https://github.com/FoundationDB/fdb-swift-bindings"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">FoundationDB Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        InMemoryTransaction Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ClusterDatabaseConnection.html">ClusterDatabaseConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ClusterDatabaseConnection/FdbApiError.html">– FdbApiError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ClusterTransaction.html">ClusterTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InMemoryDatabaseConnection.html">InMemoryDatabaseConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InMemoryTransaction.html">InMemoryTransaction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ConflictRangeType.html">ConflictRangeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DatabaseOption.html">DatabaseOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ErrorPredicate.html">ErrorPredicate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MutationType.html">MutationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NetworkOption.html">NetworkOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StreamingMode.html">StreamingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransactionOption.html">TransactionOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TupleDecodingError.html">TupleDecodingError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Bool.html">Bool</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Bool/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/EventLoopFuture.html">EventLoopFuture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float32.html">Float32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float32/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float64.html">Float64</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float64/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int16.html">Int16</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int16/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int32.html">Int32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int32/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int64.html">Int64</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int64/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int8.html">Int8</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int8/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSNull.html">NSNull</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSNull/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt16.html">UInt16</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt16/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt32.html">UInt32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt32/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt64.html">UInt64</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt64/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt8.html">UInt8</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt8/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UUID.html">UUID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UUID/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB1loiSbAA13DatabaseValueV_ADtF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB1loiSbAA5TupleV_ADtF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB2eeoiSbAA13DatabaseValueV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB2eeoiSbAA14TupleResultSetV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB2eeoiSbAA5TupleV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB2eeoiSbAA9ResultSetV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB16setFdbApiVersionys5Int32VF">setFdbApiVersion(_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DatabaseConnection.html">DatabaseConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DatabaseValueConvertible.html">DatabaseValueConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Transaction.html">Transaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TupleAdapter.html">TupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TupleConvertible.html">TupleConvertible</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DatabaseValue.html">DatabaseValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KeySelector.html">KeySelector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ResultSet.html">ResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tuple.html">Tuple</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tuple/EntryType.html">– EntryType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tuple/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TupleResultSet.html">TupleResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TupleResultSet/ParsingError.html">– ParsingError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>InMemoryTransaction</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">InMemoryTransaction</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/Transaction.html">Transaction</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>This class represents a transaction for an in-memory database.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC9eventLoop3NIO05EventG0_pvp"></a>
+                    <a name="//apple_ref/swift/Property/eventLoop" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC9eventLoop3NIO05EventG0_pvp">eventLoop</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC11readVersions5Int64Vvp"></a>
+                    <a name="//apple_ref/swift/Property/readVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC11readVersions5Int64Vvp">readVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The version of the database that the reads for this transaction start
+from.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">readVersion</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC8databaseAA0cD18DatabaseConnectionCvp"></a>
+                    <a name="//apple_ref/swift/Property/database" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC8databaseAA0cD18DatabaseConnectionCvp">database</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The database we are reading from.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">database</span><span class="p">:</span> <span class="kt"><a href="../Classes/InMemoryDatabaseConnection.html">InMemoryDatabaseConnection</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC9committedSbvp"></a>
+                    <a name="//apple_ref/swift/Property/committed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC9committedSbvp">committed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether we&rsquo;ve committed this transaction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">committed</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC9cancelledSbvp"></a>
+                    <a name="//apple_ref/swift/Property/cancelled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC9cancelledSbvp">cancelled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether we&rsquo;ve cancelled this transaction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">cancelled</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC16committedVersions5Int64VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/committedVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC16committedVersions5Int64VSgvp">committedVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The version at which we committed this transaction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">committedVersion</span><span class="p">:</span> <span class="kt">Int64</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC4read3NIO15EventLoopFutureCyAA13DatabaseValueVSgGAI_Sb8snapshottF"></a>
+                    <a name="//apple_ref/swift/Method/read(_:snapshot:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC4read3NIO15EventLoopFutureCyAA13DatabaseValueVSgGAI_Sb8snapshottF">read(_:snapshot:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method reads a value from the data store.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">read</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Structs/DatabaseValue.html">DatabaseValue</a></span><span class="p">,</span> <span class="nv">snapshot</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/DatabaseValue.html">DatabaseValue</a></span><span class="p">?</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>snapshot</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether we should perform a snapshot read.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The value that we are reading, if any exists.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC7findKey3NIO15EventLoopFutureCyAA13DatabaseValueVSgGAA0G8SelectorV8selector_Sb8snapshottF"></a>
+                    <a name="//apple_ref/swift/Method/findKey(selector:snapshot:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC7findKey3NIO15EventLoopFutureCyAA13DatabaseValueVSgGAA0G8SelectorV8selector_Sb8snapshottF">findKey(selector:snapshot:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method finds a key using a key selector.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">findKey</span><span class="p">(</span><span class="nv">selector</span><span class="p">:</span> <span class="kt"><a href="../Structs/KeySelector.html">KeySelector</a></span><span class="p">,</span> <span class="nv">snapshot</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/DatabaseValue.html">DatabaseValue</a></span><span class="p">?</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The selector telling us where to find the
+key.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>snapshot</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether we should perform a snapshot read
+when finding the key.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The first key matching this selector.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC13readSelectors3NIO15EventLoopFutureCyAA9ResultSetVGAA11KeySelectorV4from_AL2toSiSg5limitAA13StreamingModeO4modeSb8snapshotSb7reversetF"></a>
+                    <a name="//apple_ref/swift/Method/readSelectors(from:to:limit:mode:snapshot:reverse:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC13readSelectors3NIO15EventLoopFutureCyAA9ResultSetVGAA11KeySelectorV4from_AL2toSiSg5limitAA13StreamingModeO4modeSb8snapshotSb7reversetF">readSelectors(from:to:limit:mode:snapshot:reverse:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method reads a range of values for a range of keys matching two
+key selectors.</p>
+
+<p>The keys included in the result range will be from the first key
+matching the start key selector to the first key matching the end key
+selector. The start key will be included in the results, but the end key
+will not.</p>
+
+<p>The results will be ordered in lexographic order by their keys.</p>
+
+<p>This will automatically add a read conflict for the range, so that if
+any key has changed in this range since the start of this transaction
+this transaction will not be accepted.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">readSelectors</span><span class="p">(</span><span class="n">from</span> <span class="nv">start</span><span class="p">:</span> <span class="kt"><a href="../Structs/KeySelector.html">KeySelector</a></span><span class="p">,</span> <span class="n">to</span> <span class="nv">end</span><span class="p">:</span> <span class="kt"><a href="../Structs/KeySelector.html">KeySelector</a></span><span class="p">,</span> <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?,</span> <span class="nv">mode</span><span class="p">:</span> <span class="kt"><a href="../Enums/StreamingMode.html">StreamingMode</a></span><span class="p">,</span> <span class="nv">snapshot</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">reverse</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResultSet.html">ResultSet</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>from</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key selector for the beginning of the range.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>end</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key selector for the end of the range.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>limit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The maximum number of results to return.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The streaming mode to use.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>snapshot</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether we should perform a snapshot read.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>reverse</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether we should return the rows in reverse
+order.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A list of rows with the keys and their
+corresponding values.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC5storeyAA13DatabaseValueV3key_AF5valuetF"></a>
+                    <a name="//apple_ref/swift/Method/store(key:value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC5storeyAA13DatabaseValueV3key_AF5valuetF">store(key:value:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method adds a change to the transaction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">store</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Structs/DatabaseValue.html">DatabaseValue</a></span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt"><a href="../Structs/DatabaseValue.html">DatabaseValue</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key we are changing.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new value for the key.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC5clearyAA13DatabaseValueV3key_tF"></a>
+                    <a name="//apple_ref/swift/Method/clear(key:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC5clearyAA13DatabaseValueV3key_tF">clear(key:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method clears a value in the database.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">clear</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Structs/DatabaseValue.html">DatabaseValue</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key to clear.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC5clearys5RangeVyAA13DatabaseValueVG5range_tF"></a>
+                    <a name="//apple_ref/swift/Method/clear(range:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC5clearys5RangeVyAA13DatabaseValueVG5range_tF">clear(range:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method clears a range of keys in the database.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">clear</span><span class="p">(</span><span class="nv">range</span><span class="p">:</span> <span class="kt">Range</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/DatabaseValue.html">DatabaseValue</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>start</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The beginning of the range to clear.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>end</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The end of the range to clear. This will not be
+included in the range.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC15addReadConflictys5RangeVyAA13DatabaseValueVG2on_tF"></a>
+                    <a name="//apple_ref/swift/Method/addReadConflict(on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC15addReadConflictys5RangeVyAA13DatabaseValueVG2on_tF">addReadConflict(on:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method adds a read conflict for a key range.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addReadConflict</span><span class="p">(</span><span class="n">on</span> <span class="nv">range</span><span class="p">:</span> <span class="kt">Range</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/DatabaseValue.html">DatabaseValue</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>range</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The range of keys we are adding the conflict on.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC16addWriteConflictys5RangeVyAA13DatabaseValueVG2on_tF"></a>
+                    <a name="//apple_ref/swift/Method/addWriteConflict(on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC16addWriteConflictys5RangeVyAA13DatabaseValueVG2on_tF">addWriteConflict(on:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method adds a range of keys that we want to reserve for writing.</p>
+
+<p>If the system commits this transaction, and another transaction has a
+read conflict on one of these keys, that second transaction will then
+fail to commit.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addWriteConflict</span><span class="p">(</span><span class="n">on</span> <span class="nv">range</span><span class="p">:</span> <span class="kt">Range</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/DatabaseValue.html">DatabaseValue</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>range</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The range of keys to add the conflict on.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC14getReadVersion3NIO15EventLoopFutureCys5Int64VGyF"></a>
+                    <a name="//apple_ref/swift/Method/getReadVersion()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC14getReadVersion3NIO15EventLoopFutureCys5Int64VGyF">getReadVersion()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method gets the version of the database that this transaction is
+reading from.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getReadVersion</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Int64</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC14setReadVersionys5Int64VF"></a>
+                    <a name="//apple_ref/swift/Method/setReadVersion(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC14setReadVersionys5Int64VF">setReadVersion(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method gets the version of the database that this transaction
+should read from.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setReadVersion</span><span class="p">(</span><span class="n">_</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">Int64</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>version</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new version.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC19getCommittedVersion3NIO15EventLoopFutureCys5Int64VGyF"></a>
+                    <a name="//apple_ref/swift/Method/getCommittedVersion()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC19getCommittedVersion3NIO15EventLoopFutureCys5Int64VGyF">getCommittedVersion()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method gets the version of the database that this transaction
+committed its changes at.</p>
+
+<p>If the transaction has not committed, this will return -1.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getCommittedVersion</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Int64</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC5resetyyF"></a>
+                    <a name="//apple_ref/swift/Method/reset()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC5resetyyF">reset()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method resets the transaction to its initial state.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">reset</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC6cancelyyF"></a>
+                    <a name="//apple_ref/swift/Method/cancel()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC6cancelyyF">cancel()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method cancels the transaction, preventing it from being committed
+and freeing up some associated resources.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">cancel</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC12attemptRetry3NIO15EventLoopFutureCyytGs5Error_p5error_tF"></a>
+                    <a name="//apple_ref/swift/Method/attemptRetry(error:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC12attemptRetry3NIO15EventLoopFutureCyytGs5Error_p5error_tF">attemptRetry(error:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method attempts to retry a transaction after an error.</p>
+
+<p>If the error is retryable, this will reset the transaction and fire the
+returned future when the transaction is ready to use again. If the error
+is not retryable, the returned future will rethrow the error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">attemptRetry</span><span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error that the system encountered.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A future indicating when the transaction is
+ready again.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC22performAtomicOperationyAA12MutationTypeO9operation_AA13DatabaseValueV3keyAI5valuetF"></a>
+                    <a name="//apple_ref/swift/Method/performAtomicOperation(operation:key:value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC22performAtomicOperationyAA12MutationTypeO9operation_AA13DatabaseValueV3keyAI5valuetF">performAtomicOperation(operation:key:value:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method performs an atomic operation against a key and value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">performAtomicOperation</span><span class="p">(</span><span class="nv">operation</span><span class="p">:</span> <span class="kt"><a href="../Enums/MutationType.html">MutationType</a></span><span class="p">,</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Structs/DatabaseValue.html">DatabaseValue</a></span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt"><a href="../Structs/DatabaseValue.html">DatabaseValue</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>operation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The operation to perform.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key to read for the operation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new value to provide to the operation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC15getVersionStamp3NIO15EventLoopFutureCyAA13DatabaseValueVGyF"></a>
+                    <a name="//apple_ref/swift/Method/getVersionStamp()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC15getVersionStamp3NIO15EventLoopFutureCyAA13DatabaseValueVGyF">getVersionStamp()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method gets a version stamp, which is a key segment containing the
+committed version of the transaction.</p>
+
+<p>This can be called before the transaction is committed, and it will only
+return a value once the transaction is committed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getVersionStamp</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/DatabaseValue.html">DatabaseValue</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB19InMemoryTransactionC9setOptionyAA0eG0O_AA13DatabaseValueVSg5valuetF"></a>
+                    <a name="//apple_ref/swift/Method/setOption(_:value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB19InMemoryTransactionC9setOptionyAA0eG0O_AA13DatabaseValueVSg5valuetF">setOption(_:value:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method sets an option on the transaction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setOption</span><span class="p">(</span><span class="n">_</span> <span class="nv">option</span><span class="p">:</span> <span class="kt"><a href="../Enums/TransactionOption.html">TransactionOption</a></span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt"><a href="../Structs/DatabaseValue.html">DatabaseValue</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>option</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The option to set.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The value to set for the option.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://foundationdb.org" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-22)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

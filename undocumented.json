@@ -1,0 +1,264 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/ClusterTransaction.swift",
+      "line": 29,
+      "symbol": "ClusterTransaction.eventLoop",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/DatabaseValue.swift",
+      "line": 48,
+      "symbol": "DatabaseValue.init(bytes:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/FutureExtensions.swift",
+      "line": 37,
+      "symbol": "EventLoopFuture.thenThrowingFuture(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/FutureExtensions.swift",
+      "line": 94,
+      "symbol": "EventLoopFuture.accumulating(futures:eventLoop:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/InMemoryTransaction.swift",
+      "line": 28,
+      "symbol": "InMemoryTransaction.eventLoop",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Options.swift",
+      "line": 26,
+      "symbol": "NetworkOption.localAddress",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Options.swift",
+      "line": 29,
+      "symbol": "NetworkOption.clusterFile",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Options.swift",
+      "line": 64,
+      "symbol": "NetworkOption.buggifyEnable",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Options.swift",
+      "line": 66,
+      "symbol": "NetworkOption.buggifyDisable",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Options.swift",
+      "line": 139,
+      "symbol": "TransactionOption.causalReadDisable",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Options.swift",
+      "line": 147,
+      "symbol": "TransactionOption.checkWritesEnable",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Options.swift",
+      "line": 153,
+      "symbol": "TransactionOption.readAheadDisable",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Options.swift",
+      "line": 155,
+      "symbol": "TransactionOption.durabilityDatacenter",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Options.swift",
+      "line": 157,
+      "symbol": "TransactionOption.durabilityRisky",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Options.swift",
+      "line": 160,
+      "symbol": "TransactionOption.durabilityDevNullIsWebScale",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Options.swift",
+      "line": 177,
+      "symbol": "TransactionOption.debugDump",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Options.swift",
+      "line": 179,
+      "symbol": "TransactionOption.debugRetryLogging",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Options.swift",
+      "line": 241,
+      "symbol": "MutationType.and",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Options.swift",
+      "line": 247,
+      "symbol": "MutationType.or",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Options.swift",
+      "line": 253,
+      "symbol": "MutationType.xor",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Tuple.swift",
+      "line": 41,
+      "symbol": "Tuple.EntryType.null",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Tuple.swift",
+      "line": 42,
+      "symbol": "Tuple.EntryType.byteArray",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Tuple.swift",
+      "line": 43,
+      "symbol": "Tuple.EntryType.string",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Tuple.swift",
+      "line": 44,
+      "symbol": "Tuple.EntryType.tuple",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Tuple.swift",
+      "line": 45,
+      "symbol": "Tuple.EntryType.integer",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Tuple.swift",
+      "line": 46,
+      "symbol": "Tuple.EntryType.float",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Tuple.swift",
+      "line": 47,
+      "symbol": "Tuple.EntryType.double",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Tuple.swift",
+      "line": 48,
+      "symbol": "Tuple.EntryType.falseValue",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Tuple.swift",
+      "line": 49,
+      "symbol": "Tuple.EntryType.trueValue",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Tuple.swift",
+      "line": 50,
+      "symbol": "Tuple.EntryType.uuid",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/Tuple.swift",
+      "line": 51,
+      "symbol": "Tuple.EntryType.rangeEnd",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/TupleConvertible.swift",
+      "line": 238,
+      "symbol": "TupleAdapter.write(int:into:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/TupleConvertible.swift",
+      "line": 255,
+      "symbol": "TupleAdapter.readBitPattern(from:at:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/TupleConvertible.swift",
+      "line": 414,
+      "symbol": "TupleDecodingError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/TupleConvertible.swift",
+      "line": 442,
+      "symbol": "TupleDecodingError.invalidString",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/TupleResultSet.swift",
+      "line": 31,
+      "symbol": "TupleResultSet.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john/Code/fdb-swift-bindings/Sources/FoundationDB/TupleResultSet.swift",
+      "line": 35,
+      "symbol": "TupleResultSet.init(rows:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/john/Code/fdb-swift-bindings"
+}

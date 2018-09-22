@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NetworkOption Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/NetworkOption" class="dashAnchor"></a>
+    <a title="NetworkOption Enumeration Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">FoundationDB Docs</a> (90% documented)</p>
+        <p class="header-right"><a href="https://github.com/FoundationDB/fdb-swift-bindings"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">FoundationDB Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        NetworkOption Enumeration Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ClusterDatabaseConnection.html">ClusterDatabaseConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ClusterDatabaseConnection/FdbApiError.html">– FdbApiError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ClusterTransaction.html">ClusterTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InMemoryDatabaseConnection.html">InMemoryDatabaseConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InMemoryTransaction.html">InMemoryTransaction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ConflictRangeType.html">ConflictRangeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DatabaseOption.html">DatabaseOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ErrorPredicate.html">ErrorPredicate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MutationType.html">MutationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NetworkOption.html">NetworkOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StreamingMode.html">StreamingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransactionOption.html">TransactionOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TupleDecodingError.html">TupleDecodingError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Bool.html">Bool</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Bool/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/EventLoopFuture.html">EventLoopFuture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float32.html">Float32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float32/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float64.html">Float64</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float64/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int16.html">Int16</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int16/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int32.html">Int32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int32/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int64.html">Int64</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int64/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int8.html">Int8</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int8/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSNull.html">NSNull</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSNull/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt16.html">UInt16</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt16/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt32.html">UInt32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt32/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt64.html">UInt64</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt64/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt8.html">UInt8</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt8/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UUID.html">UUID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UUID/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB1loiSbAA13DatabaseValueV_ADtF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB1loiSbAA5TupleV_ADtF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB2eeoiSbAA13DatabaseValueV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB2eeoiSbAA14TupleResultSetV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB2eeoiSbAA5TupleV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB2eeoiSbAA9ResultSetV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB16setFdbApiVersionys5Int32VF">setFdbApiVersion(_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DatabaseConnection.html">DatabaseConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DatabaseValueConvertible.html">DatabaseValueConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Transaction.html">Transaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TupleAdapter.html">TupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TupleConvertible.html">TupleConvertible</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DatabaseValue.html">DatabaseValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KeySelector.html">KeySelector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ResultSet.html">ResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tuple.html">Tuple</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tuple/EntryType.html">– EntryType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tuple/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TupleResultSet.html">TupleResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TupleResultSet/ParsingError.html">– ParsingError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>NetworkOption</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">NetworkOption</span> <span class="p">:</span> <span class="kt">UInt32</span></code></pre>
+
+                </div>
+              </div>
+            <p>A set of options that can be set globally for the FoundationDB API.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO12localAddressACSgvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/localAddress" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO12localAddressACSgvpZ">localAddress</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">localAddress</span><span class="p">:</span> <span class="kt">NetworkOption</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO11clusterFileACSgvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/clusterFile" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO11clusterFileACSgvpZ">clusterFile</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">clusterFile</span><span class="p">:</span> <span class="kt">NetworkOption</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO11traceEnableA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/traceEnable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO11traceEnableA2CmF">traceEnable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enables trace output to a file in a directory of the clients choosing</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">traceEnable</span> <span class="o">=</span> <span class="mi">30</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO13traceRollSizeA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/traceRollSize" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO13traceRollSizeA2CmF">traceRollSize</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the maximum size in bytes of a single trace output file. This value should be in the range <code>[0, INT64_MAX]</code>. If the value is set to 0, there is no limit on individual file size. The default is a maximum size of 10,485,760 bytes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">traceRollSize</span> <span class="o">=</span> <span class="mi">31</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO16traceMaxLogsSizeA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/traceMaxLogsSize" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO16traceMaxLogsSizeA2CmF">traceMaxLogsSize</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the maximum size of all the trace output files put together. This value should be in the range <code>[0, INT64_MAX]</code>. If the value is set to 0, there is no limit on the total size of the files. The default is a maximum size of 104,857,600 bytes. If the default roll size is used, this means that a maximum of 10 trace files will be written at a time.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">traceMaxLogsSize</span> <span class="o">=</span> <span class="mi">32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO13traceLogGroupA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/traceLogGroup" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO13traceLogGroupA2CmF">traceLogGroup</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the &lsquo;logGroup&rsquo; attribute with the specified value for all events in the trace output files. The default log group is &lsquo;default&rsquo;.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">traceLogGroup</span> <span class="o">=</span> <span class="mi">33</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO4knobA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/knob" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO4knobA2CmF">knob</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set internal tuning or debugging knobs</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">knob</span> <span class="o">=</span> <span class="mi">40</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO9tlsPluginA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/tlsPlugin" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO9tlsPluginA2CmF">tlsPlugin</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the TLS plugin to load. This option, if used, must be set before any other TLS options</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">tlsPlugin</span> <span class="o">=</span> <span class="mi">41</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO12tlsCertBytesA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/tlsCertBytes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO12tlsCertBytesA2CmF">tlsCertBytes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the certificate chain</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">tlsCertBytes</span> <span class="o">=</span> <span class="mi">42</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO11tlsCertPathA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/tlsCertPath" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO11tlsCertPathA2CmF">tlsCertPath</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the file from which to load the certificate chain</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">tlsCertPath</span> <span class="o">=</span> <span class="mi">43</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO11tlsKeyBytesA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/tlsKeyBytes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO11tlsKeyBytesA2CmF">tlsKeyBytes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the private key corresponding to your own certificate</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">tlsKeyBytes</span> <span class="o">=</span> <span class="mi">45</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO10tlsKeyPathA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/tlsKeyPath" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO10tlsKeyPathA2CmF">tlsKeyPath</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the file from which to load the private key corresponding to your own certificate</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">tlsKeyPath</span> <span class="o">=</span> <span class="mi">46</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO14tlsVerifyPeersA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/tlsVerifyPeers" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO14tlsVerifyPeersA2CmF">tlsVerifyPeers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the peer certificate field verification criteria</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">tlsVerifyPeers</span> <span class="o">=</span> <span class="mi">47</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO13buggifyEnableA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/buggifyEnable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO13buggifyEnableA2CmF">buggifyEnable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">buggifyEnable</span> <span class="o">=</span> <span class="mi">48</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO14buggifyDisableA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/buggifyDisable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO14buggifyDisableA2CmF">buggifyDisable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">buggifyDisable</span> <span class="o">=</span> <span class="mi">49</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO34buggifySectionActivatedProbabilityA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/buggifySectionActivatedProbability" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO34buggifySectionActivatedProbabilityA2CmF">buggifySectionActivatedProbability</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the probability of a BUGGIFY section being active for the current execution.  Only applies to code paths first traversed AFTER this option is changed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">buggifySectionActivatedProbability</span> <span class="o">=</span> <span class="mi">50</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO30buggifySectionFiredProbabilityA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/buggifySectionFiredProbability" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO30buggifySectionFiredProbabilityA2CmF">buggifySectionFiredProbability</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the probability of an active BUGGIFY section being fired</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">buggifySectionFiredProbability</span> <span class="o">=</span> <span class="mi">51</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO10tlsCaBytesA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/tlsCaBytes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO10tlsCaBytesA2CmF">tlsCaBytes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the ca bundle</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">tlsCaBytes</span> <span class="o">=</span> <span class="mi">52</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO9tlsCaPathA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/tlsCaPath" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO9tlsCaPathA2CmF">tlsCaPath</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the file from which to load the certificate authority bundle</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">tlsCaPath</span> <span class="o">=</span> <span class="mi">53</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO11tlsPasswordA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/tlsPassword" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO11tlsPasswordA2CmF">tlsPassword</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the passphrase for encrypted private key. Password should be set before setting the key for the password to be used.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">tlsPassword</span> <span class="o">=</span> <span class="mi">54</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO28disableMultiVersionClientApiA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/disableMultiVersionClientApi" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO28disableMultiVersionClientApiA2CmF">disableMultiVersionClientApi</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disables the multi-version client API and instead uses the local client directly. Must be set before setting up the network.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">disableMultiVersionClientApi</span> <span class="o">=</span> <span class="mi">60</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO26callbacksOnExternalThreadsA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/callbacksOnExternalThreads" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO26callbacksOnExternalThreadsA2CmF">callbacksOnExternalThreads</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If set, callbacks from external client libraries can be called from threads created by the FoundationDB client library. Otherwise, callbacks will be called from either the thread used to add the callback or the network thread. Setting this option can improve performance when connected using an external client, but may not be safe to use in all environments. Must be set before setting up the network. WARNING: This feature is considered experimental at this time.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">callbacksOnExternalThreads</span> <span class="o">=</span> <span class="mi">61</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO21externalClientLibraryA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/externalClientLibrary" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO21externalClientLibraryA2CmF">externalClientLibrary</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds an external client library for use by the multi-version client API. Must be set before setting up the network.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">externalClientLibrary</span> <span class="o">=</span> <span class="mi">62</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO23externalClientDirectoryA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/externalClientDirectory" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO23externalClientDirectoryA2CmF">externalClientDirectory</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Searches the specified path for dynamic libraries and adds them to the list of client libraries for use by the multi-version client API. Must be set before setting up the network.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">externalClientDirectory</span> <span class="o">=</span> <span class="mi">63</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO18disableLocalClientA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/disableLocalClient" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO18disableLocalClientA2CmF">disableLocalClient</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Prevents connections through the local client, allowing only connections through externally loaded client libraries. Intended primarily for testing.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">disableLocalClient</span> <span class="o">=</span> <span class="mi">64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO30disableClientStatisticsLoggingA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/disableClientStatisticsLogging" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO30disableClientStatisticsLoggingA2CmF">disableClientStatisticsLogging</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disables logging of client statistics, such as sampled transaction activity.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">disableClientStatisticsLogging</span> <span class="o">=</span> <span class="mi">70</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO23enableSlowTaskProfilingA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/enableSlowTaskProfiling" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO23enableSlowTaskProfilingA2CmF">enableSlowTaskProfiling</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enables debugging feature to perform slow task profiling. Requires trace logging to be enabled. WARNING: this feature is not recommended for use in production.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">enableSlowTaskProfiling</span> <span class="o">=</span> <span class="mi">71</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO23supportedClientVersionsA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/supportedClientVersions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO23supportedClientVersionsA2CmF">supportedClientVersions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This option is set automatically to communicate the list of supported clients to the active client.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">supportedClientVersions</span> <span class="o">=</span> <span class="mi">1000</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO14externalClientA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/externalClient" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO14externalClientA2CmF">externalClient</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This option is set automatically on all clients loaded externally using the multi-version API.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">externalClient</span> <span class="o">=</span> <span class="mi">1001</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB13NetworkOptionO25externalClientTransportIdA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/externalClientTransportId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB13NetworkOptionO25externalClientTransportIdA2CmF">externalClientTransportId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This option tells a child on a multiversion client what transport ID to use.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">externalClientTransportId</span> <span class="o">=</span> <span class="mi">1002</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://foundationdb.org" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-22)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

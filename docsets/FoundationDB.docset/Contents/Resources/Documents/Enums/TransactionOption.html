@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TransactionOption Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/TransactionOption" class="dashAnchor"></a>
+    <a title="TransactionOption Enumeration Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">FoundationDB Docs</a> (90% documented)</p>
+        <p class="header-right"><a href="https://github.com/FoundationDB/fdb-swift-bindings"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">FoundationDB Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        TransactionOption Enumeration Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ClusterDatabaseConnection.html">ClusterDatabaseConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ClusterDatabaseConnection/FdbApiError.html">– FdbApiError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ClusterTransaction.html">ClusterTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InMemoryDatabaseConnection.html">InMemoryDatabaseConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InMemoryTransaction.html">InMemoryTransaction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ConflictRangeType.html">ConflictRangeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DatabaseOption.html">DatabaseOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ErrorPredicate.html">ErrorPredicate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MutationType.html">MutationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NetworkOption.html">NetworkOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StreamingMode.html">StreamingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransactionOption.html">TransactionOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TupleDecodingError.html">TupleDecodingError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Bool.html">Bool</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Bool/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/EventLoopFuture.html">EventLoopFuture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float32.html">Float32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float32/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float64.html">Float64</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float64/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int16.html">Int16</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int16/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int32.html">Int32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int32/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int64.html">Int64</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int64/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int8.html">Int8</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int8/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSNull.html">NSNull</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSNull/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt16.html">UInt16</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt16/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt32.html">UInt32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt32/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt64.html">UInt64</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt64/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt8.html">UInt8</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt8/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UUID.html">UUID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UUID/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB1loiSbAA13DatabaseValueV_ADtF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB1loiSbAA5TupleV_ADtF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB2eeoiSbAA13DatabaseValueV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB2eeoiSbAA14TupleResultSetV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB2eeoiSbAA5TupleV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB2eeoiSbAA9ResultSetV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12FoundationDB16setFdbApiVersionys5Int32VF">setFdbApiVersion(_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DatabaseConnection.html">DatabaseConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DatabaseValueConvertible.html">DatabaseValueConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Transaction.html">Transaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TupleAdapter.html">TupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TupleConvertible.html">TupleConvertible</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DatabaseValue.html">DatabaseValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KeySelector.html">KeySelector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ResultSet.html">ResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tuple.html">Tuple</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tuple/EntryType.html">– EntryType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tuple/FoundationDBTupleAdapter.html">– FoundationDBTupleAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TupleResultSet.html">TupleResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TupleResultSet/ParsingError.html">– ParsingError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TransactionOption</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">TransactionOption</span> <span class="p">:</span> <span class="kt">UInt32</span></code></pre>
+
+                </div>
+              </div>
+            <p>A set of options that can be set on a transaction.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO16causalWriteRiskyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/causalWriteRisky" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO16causalWriteRiskyA2CmF">causalWriteRisky</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The transaction, if not self-conflicting, may be committed a second time after commit succeeds, in the event of a fault</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">causalWriteRisky</span> <span class="o">=</span> <span class="mi">10</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO15causalReadRiskyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/causalReadRisky" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO15causalReadRiskyA2CmF">causalReadRisky</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The read version will be committed, and usually will be the latest committed, but might not be the latest committed in the event of a fault or partition</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">causalReadRisky</span> <span class="o">=</span> <span class="mi">20</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO17causalReadDisableA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/causalReadDisable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO17causalReadDisableA2CmF">causalReadDisable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">causalReadDisable</span> <span class="o">=</span> <span class="mi">21</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO011nextWriteNoF13ConflictRangeA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/nextWriteNoWriteConflictRange" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO011nextWriteNoF13ConflictRangeA2CmF">nextWriteNoWriteConflictRange</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The next write performed on this transaction will not generate a write conflict range. As a result, other transactions which read the key(s) being modified by the next write will not conflict with this transaction. Care needs to be taken when using this option on a transaction that is shared between multiple threads. When setting this option, write conflict ranges will be disabled on the next write operation, regardless of what thread it is on.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">nextWriteNoWriteConflictRange</span> <span class="o">=</span> <span class="mi">30</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO18commitOnFirstProxyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/commitOnFirstProxy" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO18commitOnFirstProxyA2CmF">commitOnFirstProxy</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Committing this transaction will bypass the normal load balancing across proxies and go directly to the specifically nominated &lsquo;first proxy&rsquo;.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">commitOnFirstProxy</span> <span class="o">=</span> <span class="mi">40</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO17checkWritesEnableA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/checkWritesEnable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO17checkWritesEnableA2CmF">checkWritesEnable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">checkWritesEnable</span> <span class="o">=</span> <span class="mi">50</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO21readYourWritesDisableA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/readYourWritesDisable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO21readYourWritesDisableA2CmF">readYourWritesDisable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reads performed by a transaction will not see any prior mutations that occured in that transaction, instead seeing the value which was in the database at the transaction&rsquo;s read version. This option may provide a small performance benefit for the client, but also disables a number of client-side optimizations which are beneficial for transactions which tend to read and write the same keys within a single transaction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">readYourWritesDisable</span> <span class="o">=</span> <span class="mi">51</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO16readAheadDisableACSgvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/readAheadDisable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO16readAheadDisableACSgvpZ">readAheadDisable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">readAheadDisable</span><span class="p">:</span> <span class="kt">TransactionOption</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO20durabilityDatacenterA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/durabilityDatacenter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO20durabilityDatacenterA2CmF">durabilityDatacenter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">durabilityDatacenter</span> <span class="o">=</span> <span class="mi">110</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO15durabilityRiskyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/durabilityRisky" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO15durabilityRiskyA2CmF">durabilityRisky</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">durabilityRisky</span> <span class="o">=</span> <span class="mi">120</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO27durabilityDevNullIsWebScaleACSgvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/durabilityDevNullIsWebScale" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO27durabilityDevNullIsWebScaleACSgvpZ">durabilityDevNullIsWebScale</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">durabilityDevNullIsWebScale</span><span class="p">:</span> <span class="kt">TransactionOption</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO23prioritySystemImmediateA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/prioritySystemImmediate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO23prioritySystemImmediateA2CmF">prioritySystemImmediate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies that this transaction should be treated as highest priority and that lower priority transactions should block behind this one. Use is discouraged outside of low-level tools</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">prioritySystemImmediate</span> <span class="o">=</span> <span class="mi">200</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO13priorityBatchA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/priorityBatch" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO13priorityBatchA2CmF">priorityBatch</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies that this transaction should be treated as low priority and that default priority transactions should be processed first. Useful for doing batch work simultaneously with latency-sensitive work</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">priorityBatch</span> <span class="o">=</span> <span class="mi">201</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO21initializeNewDatabaseA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/initializeNewDatabase" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO21initializeNewDatabaseA2CmF">initializeNewDatabase</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is a write-only transaction which sets the initial configuration. This option is designed for use by database system tools only.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">initializeNewDatabase</span> <span class="o">=</span> <span class="mi">300</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO16accessSystemKeysA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/accessSystemKeys" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO16accessSystemKeysA2CmF">accessSystemKeys</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows this transaction to read and modify system keys (those that start with the byte 0xFF)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">accessSystemKeys</span> <span class="o">=</span> <span class="mi">301</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO14readSystemKeysA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/readSystemKeys" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO14readSystemKeysA2CmF">readSystemKeys</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows this transaction to read system keys (those that start with the byte 0xFF)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">readSystemKeys</span> <span class="o">=</span> <span class="mi">302</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO9debugDumpA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/debugDump" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO9debugDumpA2CmF">debugDump</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">debugDump</span> <span class="o">=</span> <span class="mi">400</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO17debugRetryLoggingA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/debugRetryLogging" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO17debugRetryLoggingA2CmF">debugRetryLogging</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">debugRetryLogging</span> <span class="o">=</span> <span class="mi">401</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO24transactionLoggingEnableA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/transactionLoggingEnable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO24transactionLoggingEnableA2CmF">transactionLoggingEnable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enables tracing for this transaction and logs results to the client trace logs. Client trace logging must be enabled to get log output.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">transactionLoggingEnable</span> <span class="o">=</span> <span class="mi">402</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO7timeoutA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/timeout" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO7timeoutA2CmF">timeout</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set a timeout in milliseconds which, when elapsed, will cause the transaction automatically to be cancelled. Valid parameter values are <code>[0, INT_MAX]</code>. If set to 0, will disable all timeouts. All pending and any future uses of the transaction will throw an exception. The transaction can be used again after it is reset. Like all transaction options, a timeout must be reset after a call to onError. This behavior allows the user to make the timeout dynamic.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">timeout</span> <span class="o">=</span> <span class="mi">500</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO10retryLimitA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/retryLimit" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO10retryLimitA2CmF">retryLimit</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set a maximum number of retries after which additional calls to onError will throw the most recently seen error code. Valid parameter values are <code>[-1, INT_MAX]</code>. If set to -1, will disable the retry limit. Like all transaction options, the retry limit must be reset after a call to onError. This behavior allows the user to make the retry limit dynamic.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">retryLimit</span> <span class="o">=</span> <span class="mi">501</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO13maxRetryDelayA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/maxRetryDelay" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO13maxRetryDelayA2CmF">maxRetryDelay</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the maximum amount of backoff delay incurred in the call to onError if the error is retryable. Defaults to 1000 ms. Valid parameter values are <code>[0, INT_MAX]</code>. Like all transaction options, the maximum retry delay must be reset after a call to onError. If the maximum retry delay is less than the current retry delay of the transaction, then the current retry delay will be clamped to the maximum retry delay.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">maxRetryDelay</span> <span class="o">=</span> <span class="mi">502</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO17snapshotRywEnableA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/snapshotRywEnable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO17snapshotRywEnableA2CmF">snapshotRywEnable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Snapshot read operations will see the results of writes done in the same transaction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">snapshotRywEnable</span> <span class="o">=</span> <span class="mi">600</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO18snapshotRywDisableA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/snapshotRywDisable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO18snapshotRywDisableA2CmF">snapshotRywDisable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Snapshot read operations will not see the results of writes done in the same transaction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">snapshotRywDisable</span> <span class="o">=</span> <span class="mi">601</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO9lockAwareA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/lockAware" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO9lockAwareA2CmF">lockAware</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The transaction can read and write to locked databases, and is resposible for checking that it took the lock.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">lockAware</span> <span class="o">=</span> <span class="mi">700</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO33usedDuringCommitProtectionDisableA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/usedDuringCommitProtectionDisable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO33usedDuringCommitProtectionDisableA2CmF">usedDuringCommitProtectionDisable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>By default, operations that are performed on a transaction while it is being committed will not only fail themselves, but they will attempt to fail other in-flight operations (such as the commit) as well. This behavior is intended to help developers discover situations where operations could be unintentionally executed after the transaction has been reset. Setting this option removes that protection, causing only the offending operation to fail.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">usedDuringCommitProtectionDisable</span> <span class="o">=</span> <span class="mi">701</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FoundationDB17TransactionOptionO13readLockAwareA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/readLockAware" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FoundationDB17TransactionOptionO13readLockAwareA2CmF">readLockAware</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The transaction can read from locked databases.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">readLockAware</span> <span class="o">=</span> <span class="mi">702</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://foundationdb.org" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-09-22)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
