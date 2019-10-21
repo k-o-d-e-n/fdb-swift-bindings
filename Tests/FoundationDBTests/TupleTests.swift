@@ -523,4 +523,11 @@ class TupleTests: XCTestCase {
 	func testCompareTuplesWithPrefixAsSecondReturnsFalse() {
 		XCTAssertFalse(Tuple("Value2") < Tuple("Value"))
 	}
+
+    func testTupleInt8Conversion() {
+        let value = Int8(-100)
+        let tuple = Tuple(value)
+
+        XCTAssertEqual(value, try tuple.read(at: 0))
+    }
 }

@@ -231,6 +231,16 @@ extension Int8: TupleConvertible {
 	public struct FoundationDBTupleAdapter: TupleAdapter {
 		public typealias ValueType = Int8
 		public static let typeCodes = integerTypeCodes()
+
+        public static func write(value: Int8, into buffer: inout Data) {
+            Int16.FoundationDBTupleAdapter.write(value: Int16(value), into: &buffer)
+        }
+        public static func read(from buffer: Data, at offset: Int) throws -> ValueType {
+            guard let value = Int8(exactly: try Int16.FoundationDBTupleAdapter.read(from: buffer, at: offset)) else {
+                throw TupleDecodingError.integerOverflow
+            }
+            return value
+        }
 	}
 }
 
