@@ -102,8 +102,8 @@ public struct Tuple: Equatable, Hashable, Comparable {
 		- parameter string:		The string to add.
 		*/
 	public mutating func append(contentsOf tuple: Tuple) {
-		self.offsets.append(contentsOf: tuple.offsets)
-		self.data.append(contentsOf: tuple.data)
+        tuple.offsets.forEach { offsets.append($0 + data.endIndex) }
+		data.append(contentsOf: tuple.data)
 	}
 	
 	/**

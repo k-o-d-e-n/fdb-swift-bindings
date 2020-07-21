@@ -46,6 +46,7 @@ class TupleTests: XCTestCase {
 			("testAppendIntegerWithNegativeIntegerAppendsBytes", testAppendIntegerWithNegativeIntegerAppendsBytes),
 			("testAppendIntegerWith64BitIntegerAppendsBytes", testAppendIntegerWith64BitIntegerAppendsBytes),
 			("testAppendingMultipleTimesAddsAllValues", testAppendingMultipleTimesAddsAllValues),
+            ("testAppendingOtherTuple", testAppendingOtherTuple),
 			("testReadWithStringWithValidDataReadsString", testReadWithStringWithValidDataReadsString),
 			("testReadWithStringWithIntegerValueThrowsError", testReadWithStringWithIntegerValueThrowsError),
 			("testReadWithStringWithInvalidUTF8DataThrowsError", testReadWithStringWithInvalidUTF8DataThrowsError),
@@ -263,6 +264,16 @@ class TupleTests: XCTestCase {
 			]))
 		XCTAssertEqual(tuple.count, 4)
 	}
+
+    func testAppendingOtherTuple() {
+        var tuple1 = Tuple("Test Value")
+        let tuple2 = Tuple(100)
+
+        tuple1.append(contentsOf: tuple2)
+
+        try XCTAssertEqual(tuple1.read(at: 0), "Test Value")
+        try XCTAssertEqual(tuple1.read(at: 1), 100)
+    }
 	
 	func testReadWithStringWithValidDataReadsString() throws {
 		var tuple = Tuple()
